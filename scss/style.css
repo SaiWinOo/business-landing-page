@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 * {
   font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .hero {
@@ -24,6 +27,17 @@ nav {
   margin-right: auto;
   z-index: 100;
   background: hsla(219deg, 30%, 18%, 0.557);
+}
+@media screen and (max-width: 360px) {
+  nav {
+    width: 92% !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  nav {
+    height: 70px;
+    padding: 12px;
+  }
 }
 @media screen and (min-width: 1300px) {
   nav {
@@ -49,11 +63,17 @@ nav ul {
   display: flex;
   flex-direction: row;
   justify-content: end;
+  margin-bottom: 0 !important;
 }
 @media screen and (max-width: 480px) {
   nav ul {
     padding: 0;
     font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 361px) {
+  nav ul {
+    font-size: 0.7rem;
   }
 }
 nav ul li {
@@ -91,6 +111,14 @@ nav ul li a {
   }
   .homepage h3, .homepage .h3 {
     padding: 0 5px 0 5px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .homepage {
+    width: 100%;
+  }
+  .homepage img {
+    width: 324px;
   }
 }
 .homepage h3, .homepage .h3 {
